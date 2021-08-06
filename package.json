@@ -1,0 +1,23 @@
+{
+  "name": "soundtrek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "push-dir": "^0.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martingasser/soundtrek.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martingasser/soundtrek/issues"
+  },
+  "homepage": "https://github.com/martingasser/soundtrek#readme"
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="leaflet-routing-machine.css" />
+
+    <!-- Leaflet Javascript Lib – Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <script src="leaflet-routing-machine.js"></script>
+
+    <!-- tone.js API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.14/Tone.js"></script>
+
+    <!-- CSS general -->
+    <link rel="stylesheet" type="text/css" href="soundtrek.css">
+
+    <script src="visibility.js"></script>
+    <title>Black Unicorn – Soundtrek</title>
+</head>
+
+
+<body>
+
+    <header>
+        <img src="images/BlackUnicornLogo_800px.png" alt="Black Unicorn" class="headerlogo" onclick="showIndex()"></img>
+    </header>
+  
+    <main>
+  
+        <div class="mainIndex" id="mainIndex">
+          <div class="textbox">
+            <h1>SOUNDTREK 1.0</h1>
+            <h2>Software development: Martin Gasser</h2>
+            <p>Soundtrek is an alternative acoustic reality for the walks of Klangmanifeste. For a seamless experience you have to prevent your mobile phone from going to sleep mode:
+            </p>
+            <p>iOs – Settings > Display & Brightness > Auto-Lock  > „never“
+            </p>
+            <p>Android – Settings > Display > Sleep or Screen Timeout > 30 minutes (or longer)</p>
+            <button class="button" id="start" onclick="showMap()">START Soundtrek</button>
+          </div>
+        </div>
+  
+        <div class="mainMap" id="mainMap">
+          <div id="issMap"></div>
+        </div>
+  
+    </main>
+  
+    <footer>
+        <div class="footer">
+          <h3>&#169; 2021</h3>
+        </div>
+    </footer>
+
+    <!-- My Javascripts -->
+    <script type="module" src="Loop.js"></script>
+    <script type="module" src="weightedChoice.js"></script>
+    <script type="module" src="scale.js"></script>
+    <script type="module" src="map.js"></script>
+    <script type="module" src="config.js"></script>
+    <script type="module" src="GranularLoop.js"></script>
+    <script type="module" src="FMLoop.js"></script>
+    <script type="module" src="SeamlessLoop.js"></script>
+    <script type="module" src="SampleLoop.js"></script>
+    <script type="module" src="Location.js"></script>
+    <script type="module" src="main.js"></script>
+    
+</body>
+
+</html>
